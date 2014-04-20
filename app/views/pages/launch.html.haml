@@ -19,8 +19,8 @@
             Using email, phone and SMS, we are making it easy for you to contact who you to when you need to.
 
           %p.call-to-action-pre-text
-            Enter your email address to get a beta invite!
-          = form_tag do
-            = text_field_tag :email, nil, :placeholder => 'john@acme.com', :class => 'form-control', :style => 'width: 70%; display:inline;'
+            Get notified when you can beta test oncall.io:
+          = form_tag subscribe_path do
+            = text_field_tag :email, nil, :placeholder => "What's your email address?", :class => 'form-control', :style => 'width: 70%; display:inline;', :type => 'email'
             = submit_tag "GO", :class => 'btn btn-success'
         .col-sm-4

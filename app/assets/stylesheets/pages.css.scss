@@ -2,15 +2,15 @@
 // not intend for these styles to be used for the actual design
 // of the web site.
 
+$box-color: #000;
+$box-font-color: #fff;
+
 @mixin Opacity($value){
   $IEValue: $value*100;
   opacity: $value;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
   filter: alpha(opacity=$IEValue);
 }
-
-$box-color: #000;
-$box-font-color: #fff;
 
 .launch-page {
   background: asset_url('launch_background.png') 0 0 no-repeat;
