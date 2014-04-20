@@ -8,5 +8,18 @@
     %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
     = csrf_meta_tags
-  %body
-    %h1 hi
+  %body.launch-page
+    .box
+      .logo
+      %h1 Simplify your on call process.
+      %p
+        Using email, phone and SMS, we are making it easy for you to contact who you to when you need to.
+
+      %p.call-to-action-pre-text
+        Enter your email address to get a beta invite!
+      = form_tag do
+        = text_field_tag :email, nil, :placeholder => 'Enter a email address', :class => 'form-control'
+      %button
+        GO
+
+  

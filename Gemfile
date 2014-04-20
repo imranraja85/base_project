@@ -9,8 +9,8 @@ gem 'rails', '~> 4.1.0'
 gem 'pg'
 
 gem 'haml'
-#gem 'sass-rails', '~> 4.0.2'                           # https://github.com/rails/sass-rails/issues/191
-#gem 'bootstrap-sass'
+gem 'sass-rails', '~> 4.0.2'                           # https://github.com/rails/sass-rails/issues/191
+gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'simple_form', '~> 3.1.0.rc1'                      # Bootstrap 3 support
@@ -18,6 +18,7 @@ gem 'uglifier'
 gem 'capistrano', '~> 3.1.0'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'dotenv-rails'
+gem 'bourbon'
 
 gem 'awesome_print'
 

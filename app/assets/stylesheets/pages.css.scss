@@ -1,3 +1,57 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// This stylesheet is soley for styling launch pages. I do
+// not intend for these styles to be used for the actual design
+// of the web site.
+
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+$box-color: #000;
+$box-font-color: #fff;
+
+.launch-page {
+  background: asset_url('launch_background.png') 0 0 no-repeat;
+
+  .box{
+    color: $box-font-color;
+    width: 40%;
+    background-color: $box-color;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    font-family: $lucida-grande;
+    @include Opacity(.85);
+    text-align: center;
+    padding: 20px;
+
+    h1{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .logo{
+      background: asset_url('logo.png') 0 0 no-repeat;
+      height: 100px;
+      width: 300px;
+      margin: auto;
+    }
+
+    p{
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .call-to-action-pre-text{
+    font-style: italic;
+  }
+
+  button{
+    @include button(shiny, #79cc00);
+    color: #fff;
+    opactiy: 1;
+  } 
+}
