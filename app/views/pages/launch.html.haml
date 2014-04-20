@@ -1,1 +1,12 @@
-%h1 hi
+!!!
+%html
+  %head
+    %title BaseProject: Main
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    = csrf_meta_tags
+  %body
+    %h1 hi
