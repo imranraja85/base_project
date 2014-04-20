@@ -8,9 +8,9 @@ gem 'rack-canonical-host'
 gem 'rails', '~> 4.1.0'
 gem 'pg'
 
-gem 'slim-rails'
-gem 'sass-rails', '~> 4.0.2'                           # https://github.com/rails/sass-rails/issues/191
-gem 'bootstrap-sass'
+gem 'haml'
+#gem 'sass-rails', '~> 4.0.2'                           # https://github.com/rails/sass-rails/issues/191
+#gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'simple_form', '~> 3.1.0.rc1'                      # Bootstrap 3 support
