@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def subscribe
     Subscriber.create(subscriber_params)
 
-    redirect_to :back
+    redirect_to root_path(:signup => 'true')
   end
 
   private
