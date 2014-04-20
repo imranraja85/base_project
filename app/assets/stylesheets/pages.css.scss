@@ -32,13 +32,6 @@ $box-font-color: #fff;
       margin-bottom: 20px;
     }
 
-    .logo{
-      background: asset_url('logo.png') 0 0 no-repeat;
-      height: 100px;
-      width: 300px;
-      margin: auto;
-    }
-
     p{
       font-size: 15px;
       margin-bottom: 20px;
@@ -48,10 +41,4 @@ $box-font-color: #fff;
   .call-to-action-pre-text{
     font-style: italic;
   }
-
-  button{
-    @include button(shiny, #79cc00);
-    color: #fff;
-    opactiy: 1;
-  } 
 }
