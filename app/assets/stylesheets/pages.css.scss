@@ -1,6 +1,8 @@
-// This stylesheet is soley for styling launch pages. I do
-// not intend for these styles to be used for the actual design
-// of the web site.
+// ****************************************************************************
+//
+//  LAUNCH PAGE
+//
+// ****************************************************************************
 
 $box-color: #000;
 $box-font-color: #fff;
@@ -55,4 +57,69 @@ $box-font-color: #fff;
         max-height:100px; border:0; margin-top:0; padding-top:0;
       }
   }
+}
+
+// ****************************************************************************
+//
+//  HEADER
+//
+// ****************************************************************************
+.master-header{
+  position: relative;
+  height: 90px;
+  padding: 20px 0 0;
+  font-family: $lucida-grande;
+  background-color: #fff;
+
+  .header-title{
+    position: relative;
+    bottom: 20px;
+    display:inline;
+  }
+
+  nav {
+    display: inline-block;
+  }
+  ul{
+    li{
+      list-style-type: none;
+      float: left;
+      padding: 10px;
+
+      a{
+        color: #989898;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.article{
+  background: #fff;
+  height: auto;
+  font-size: 16px;
+  color: #333333;
+}
+
+// ****************************************************************************
+//
+//  HOME PAGE
+//
+// ****************************************************************************
+
+.first-section{
+  height: 500px;
+  background-color: red;
+}
+.second-section{
+  height: 500px;
+  background-color: gray;
+}
+.third-section{
+  height: 500px;
+  background-color: green;
+}
+.fourth-section{
+  height: 500px;
+  background-color: blue;
 }

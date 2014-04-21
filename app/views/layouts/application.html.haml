@@ -6,4 +6,15 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
+    .master-header
+      .container
+        .row
+          .header-title
+            = image_tag(asset_url('logo.png'))
+          %nav
+            %ul
+              %li= link_to 'Take a tour'
+              %li= link_to 'Start a free trial'
+              %li= link_to 'Contact Us'
+              %li= link_to 'Sign In', nil,style: 'color: #64c229'
     = yield
