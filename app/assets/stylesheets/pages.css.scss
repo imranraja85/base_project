@@ -41,4 +41,18 @@ $box-font-color: #fff;
   .call-to-action-pre-text{
     font-style: italic;
   }
+
+  nav.share {
+      display:inline-block;
+  
+      div {
+        float:left; overflow:hidden;
+      }
+      .fb_iframe_widget{
+        bottom: 5px;
+      }
+      iframe {
+        max-height:100px; border:0; margin-top:0; padding-top:0;
+      }
+  }
 }

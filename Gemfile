@@ -19,6 +19,7 @@ gem 'capistrano', '~> 3.1.0'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'dotenv-rails'
 gem 'bourbon'
+gem 'shareable'
 
 gem 'awesome_print'
 

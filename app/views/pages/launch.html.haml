@@ -4,10 +4,6 @@
     %title BaseProject: Main
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
-    %script{src: "http://w.sharethis.com/button/buttons.js", type: "text/javascript"}
-    %script
-      var switchTo5x=true;
-      stLight.options({publisher: "fe4b6958-642c-412a-a7f8-9a78461c2ecb", doNotHash: true, doNotCopy: false, hashAddressBar: false, shorten: false})
 
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
@@ -25,16 +21,12 @@
         .col-sm-4.box
           = image_tag(asset_url('logo.png'), :class => 'img-responsive', :style => 'width: 100%')
           %h1 Simplify your on call process.
+          = render_shareable
 
           - if params[:signup] == 'true'
             %p.call-to-action-pre-text
               Thank you for signing up! Help us get the word out about oncall:
             %div{style: ''}
-              %span.st_facebook_vcount{displaytext: "Facebook"}
-              %span.st_twitter_vcount{displaytext: "Tweet", st_via: "oncallio", st_title: "We make it easy to manage your on-call team. Sign up for a beta invite today at "}
-              %span.st_plusone_vcount{displaytext: "Google +1", st_title: 'OnCall.io: Simplying your on-call process', st_summary: 'At oncall.io we are making it easier to manage your on-call team with email, SMS and voice messages. Sign up for a beta invite today at www.oncall.io'}
-              %span.st_linkedin_vcount{displaytext: "LinkedIn", st_image: "#{asset_path('logo.png')}", st_title: 'OnCall.io: Simplying your on-call process', st_summary: 'At oncall.io we are making it easier to manage your on-call team with email, SMS and voice messages. Sign up for a beta invite today at www.oncall.io'}
-              %span.st_email_vcount{displaytext: "Email", st_title: "Oncall.io makes it easy to manage your on-call team", st_summary: 'At oncall.io we are making it easier to manage your on-call team with email, SMS and voice messages. Sign up for a beta invite today at www.oncall.io'}
           - else
             %p
               Using email, phone and SMS, we are making it easy for you to contact who you to when you need to.
